@@ -1,0 +1,46 @@
+/* Stil pentru body */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Stil pentru bara de navigare */
+  .navbar {
+    padding: 15px;
+  }
+  
+  /* Inputul de căutare */
+  .input-group {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Cardurile de filme */
+  .card {
+    background-color: #2b2b2b;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Buton de favorite */
+  .btn-warning {
+    font-weight: bold;
+  }
+  
+  .btn-warning:hover {
+    background-color: #ffc107;
+    color: black;
+  }
+  
