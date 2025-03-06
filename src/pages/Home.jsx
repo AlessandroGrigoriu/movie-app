@@ -12,15 +12,15 @@ function Home() {
     getRecommendedMovies();
   }, []);
 
-  // Obține filme populare random pentru homepage
+  // filme populare random pentru homepage
   const getRecommendedMovies = async () => {
     try {
       const url = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
       const response = await fetch(url);
       const data = await response.json();
-      setRecommendedMovies(data.results.slice(0, 6)); // Luăm doar 6 filme populare
+      setRecommendedMovies(data.results.slice(0, 6)); // doar 6 filme populare
 
-      // Alegem un film random pentru banner
+      //  film random pentru banner
       if (data.results.length > 0) {
         setBannerMovie(data.results[Math.floor(Math.random() * data.results.length)]);
       }
